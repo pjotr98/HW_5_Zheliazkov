@@ -21,5 +21,4 @@ with open(filename, "w", newline="") as file:
 with open(filename, "r", newline="") as file:
     reader = csv.DictReader(file)
     for row in reader:
-        #print(row["First name"], row["Last name"], "-", row["Telegram tag"])
         pp.pprint(row["First name"] + " " + row["Last name"] + " " + row["Telegram tag"])
